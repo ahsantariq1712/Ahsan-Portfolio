@@ -215,7 +215,7 @@ footer {
 .fixed-icons {
   position: fixed;
   top: 80%;
-  right: 20px;
+  right: 5px;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
@@ -231,4 +231,9 @@ footer {
 
 .fixed-icons a img:hover {
   transform: scale(1.1);
+}
+@media (max-width: 768px) {
+    .fixed-icons {
+        transform: translateY(-10%);
+    }
 }
