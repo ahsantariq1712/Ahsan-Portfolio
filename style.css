@@ -334,3 +334,60 @@ footer {
       from { transform: rotateY(0deg); }
       to { transform: rotateY(360deg); }
     }
+
+    /* Mobile Responsive CSS */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .carousel-card {
+    width: 220px;
+    height: 320px;
+  }
+
+  .card-header {
+    height: 120px;
+  }
+  .carousel-card p {
+    font-size: 13px;
+  }
+
+  /* translateZ adjust */
+  .carousel-card:nth-child(1) { transform: rotateY(0deg) translateZ(300px); }
+  .carousel-card:nth-child(2) { transform: rotateY(72deg) translateZ(300px); }
+  .carousel-card:nth-child(3) { transform: rotateY(144deg) translateZ(300px); }
+  .carousel-card:nth-child(4) { transform: rotateY(216deg) translateZ(300px); }
+  .carousel-card:nth-child(5) { transform: rotateY(288deg) translateZ(300px); }
+}
+
+/* Mobile Phones */
+@media (max-width: 576px) {
+  .carousel-card {
+    width: 180px;
+    height: 260px;
+  }
+
+  .card-header {
+    height: 100px;
+  }
+
+  .carousel-card h5 {
+    font-size: 14px;
+  }
+
+  .carousel-card p {
+    font-size: 12px;
+    min-height: auto;
+  }
+
+  .btn-custom {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  /* translateZ adjust aur chhota */
+  .carousel-card:nth-child(1) { transform: rotateY(0deg) translateZ(220px); }
+  .carousel-card:nth-child(2) { transform: rotateY(72deg) translateZ(220px); }
+  .carousel-card:nth-child(3) { transform: rotateY(144deg) translateZ(220px); }
+  .carousel-card:nth-child(4) { transform: rotateY(216deg) translateZ(220px); }
+  .carousel-card:nth-child(5) { transform: rotateY(288deg) translateZ(220px); }
+}
