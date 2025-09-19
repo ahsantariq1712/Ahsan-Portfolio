@@ -78,6 +78,9 @@ body {
     scroll-behavior: smooth;
     background-color: #000000;
 }
+.homepgHeader {
+    position: static;
+}
 .portfolio_banner {
     padding: 150px 0;
     text-align: center;
