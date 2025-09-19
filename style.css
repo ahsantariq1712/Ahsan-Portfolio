@@ -386,6 +386,9 @@ footer {
     padding: 6px 12px;
     font-size: 12px;
   }
+  .btn-custom {
+    display: none;
+  }
 
   /* translateZ adjust aur chhota */
   .carousel-card:nth-child(1) { transform: rotateY(0deg) translateZ(220px); }
