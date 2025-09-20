@@ -1,4 +1,5 @@
- @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
 :root {
   --lightGrey: #fcfeff;
 
@@ -72,7 +73,7 @@ label,
 select,
 ::placeholder,
 .btn {
-    font-family: "Inter", sans-serif;
+      font-family: "Alan Sans", sans-serif;
 }
 body {
     scroll-behavior: smooth;
@@ -397,3 +398,143 @@ footer {
   .carousel-card:nth-child(4) { transform: rotateY(216deg) translateZ(220px); }
   .carousel-card:nth-child(5) { transform: rotateY(288deg) translateZ(220px); }
 }
+/* rcm section css */
+    .rcm-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      padding: 40px;
+      margin-top: 60px;
+      margin-bottom: 80px;
+    }
+
+    /* Left Side */
+    .steps {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .step {
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 14px;
+      background: #f8f8f8;
+      width: 400px;
+    }
+
+    .step-icon {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+
+    .orange { 
+      background: #fff3f0;
+      margin-left: 60px;
+      position: relative;
+   }
+    .green { 
+      background: #ecfdf5;
+      position: relative;
+     }
+    .purple { 
+      background: #f5f3ff;
+      margin-left: 100px; 
+      position: relative;
+  }
+    .yellow { 
+      background: #fff7ed; 
+      position: relative;
+    }
+
+    /* Right Side */
+    .content-rcm {
+      flex: 1;
+    }
+
+    .content-rcm h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: white;
+      font-weight: 700;
+    }
+
+    .tagline {
+      background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 55%, rgba(115, 115, 115, 1) 100%);
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 14px;
+      display: inline-block;
+      margin-bottom: 15px;
+      color: white;
+      font-weight: 600;
+    }
+
+    .content-rcm p {
+      line-height: 1.6;
+      color: #fff;
+    }
+    .step p {
+      margin: 4px;
+    }
+    .step i {
+      font-size: 25px;
+      color: white;
+      padding: 5px;
+      border-radius: 9px;
+    }
+    .bellFst {
+      background-color: #FF4F00;
+    }
+    .bellsnd {
+      background-color: #2DBF6C;
+    }
+    .belltrd {
+      background-color: #8A5CFF;
+    }
+    .bellfrth {
+      background-color: #E7A343;
+    }
+    .orange i {
+      display: flex;
+      position: absolute;
+      right: 40px;
+      top: -25px;
+    }
+    .purple i {
+      display: flex;
+      position: absolute;
+      top: -25px;
+      right: 50px;
+    }
+    .green i {
+      display: flex;
+      position: absolute;
+      top: -25px;
+    }
+    .yellow i {
+      display: flex;
+      position: absolute;
+      top: -25px;
+    }
+    .step strong  {
+      font-size: 16px;
+      font-style: italic;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .step {
+        width: 312px;
+        padding: 12px;
+        font-size: 12px;
+      }
+      .step strong {
+        font-size: 14px;
+      }
+    }
