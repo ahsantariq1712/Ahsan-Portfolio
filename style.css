@@ -526,7 +526,7 @@ footer {
 
     /* Responsive Design */
     @media (max-width: 768px) {
-      .container {
+      .rcm-container {
         flex-direction: column;
       }
       .step {
