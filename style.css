@@ -476,6 +476,10 @@ footer {
       line-height: 1.6;
       color: #fff;
     }
+    /* hiddem */
+    .myServices {
+      display: none;
+    }
     .step p {
       margin: 4px;
     }
@@ -523,7 +527,75 @@ footer {
       font-size: 16px;
       font-style: italic;
     }
-
+    .contactBtn {
+      background: red;
+      border-radius: 4px;
+      width: 100px;
+      text-align: center;
+    }
+ .contactBtn:hover {
+    color: white !important;
+  }
+  .award_img1 {
+    background-image: url(hef1.webp);
+    width: 31%;
+    height: 500px;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .award_img2 {
+    background-image: url(hef2.webp);
+    width: 31%;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+  }
+  .award_img3 {
+    background-image: url(hef3.webp);
+    width: 31%;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+  }
+  .awardwrapper_row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .award_img h2 {
+    margin: 20px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .award_img4 {
+    background-image: url(hef4.webp);
+    width: 31%;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+  }
+    .award_img5 {
+    background-image: url(hef5.webp);
+    width: 31%;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+  }
+    .award_img6 {
+    background-image: url(hef6.webp);
+    width: 31%;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+  }
+  .awardwrapper_row2 {
+    margin-top: 40px;
+  }
     /* Responsive Design */
     @media (max-width: 768px) {
       .rcm-container {
@@ -538,3 +610,61 @@ footer {
         font-size: 14px;
       }
     }
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .awardWrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 15px;
+  }
+
+  .awardwrapper_row {
+    flex: none;
+    display: flex;
+    gap: 15px;
+  }
+
+  .award_img {
+    flex: none;
+    min-width: 250px; /* image ka width fix rakhna hoga scrolling ke liye */
+    height: 180px;
+    scroll-snap-align: start;
+  }
+  .awardwrapper_row2 {
+    margin-top: 0;
+  }
+}
+.award_img {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Overlay banaya */
+.award_img::before {
+  content: "Explore More"; /* yaha apna text likh do */
+  position: absolute;
+  top: -100%; /* upar se hidden */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 223, 0, 0.9); /* yellow overlay */
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+  font-weight: bold;
+  transition: top 0.4s ease-in-out;
+}
+
+/* Hover effect */
+.award_img:hover::before {
+  top: 0; /* neeche slide ho kar visible ho jayega */
+}
