@@ -791,6 +791,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
 }
 .bgOrange_section h1 {
   font-size: 100px;
