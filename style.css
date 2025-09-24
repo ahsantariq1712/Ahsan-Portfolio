@@ -832,6 +832,9 @@ footer {
   justify-content: space-between;
   margin-bottom: 70px;
 }
+.myinfotabs {
+  margin-top: 20px;
+}
 .companyList ul li a:hover,
 .first_footerList ul li a:hover,
 .secondFooter_list ul li a:hover {
@@ -936,5 +939,12 @@ footer {
 }
 .digital_services {
   margin-bottom: 35px;
+}
+.bgOrange_section h1 {
+  font-size: 45px;
+  line-height: 48px;
+}
+.bgOrange_section {
+  height: 40vh;
 }
 }
